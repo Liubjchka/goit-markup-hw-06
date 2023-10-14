@@ -727,22 +727,23 @@ color: #8E8F99;
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
+display: flex;
+align-items: center;
 }
 
 .check-text a {
 color: #4D5AE5;
-text-decoration-line: underline;
+text-decoration: underline;
 }
 
 .check-text span {
 display: flex;
 align-items: center;
 justify-content: center;
-vertical-align: middle;
 width: 16px;
 height: 16px;
-stroke-width: 1px;
-stroke: rgba(46, 47, 66, 0.40);
+border-radius: 4px;
+border: 1px solid rgba(46, 47, 66, 0.40);
 fill:transparent;
 margin-right: 8px;
 }
@@ -754,6 +755,28 @@ margin-right: 8px;
 }
 
 .check-input:checked + .check-text span {
-    border:none;
-    fill: #4D5AE5;
+background-color: #4D5AE5;
+border: none;
+fill: #ffffff;
+}
+
+.modal-main-btn {
+display:flex;
+align-items: center;
+text-align: center;
+padding: 16px 32px;
+
+gap: 10px;
+border-radius: 4px;
+border: #4D5AE5;
+background: #4D5AE5;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding: 16px 32px;
+color: var(--WHITE, #FFF);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+margin: 24px 120px;
 }
