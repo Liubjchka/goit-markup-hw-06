@@ -466,15 +466,24 @@
 
 <div class="footer-middle">
     <form class="footer-form">
-        <input type="text">
+        <p class="footer-form-text">Subscribe</p>
+        <input 
+        type="email"
+        class="footer-input"
+        placeholder="E-mail"
+        aria-label="email input">
+        <button type="submit" class="footer-btn">Subscribe
+        <svg class="footer-email-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-Frame-3"></use>
+        </svg>
+        </button>
     </form>
-
 </div>
 
 </div>
 </footer>
 
-<div class="backdrop visually-hidden">
+<div class="backdrop is-open">
     <div class="modal">
         <button type="button" class="modal-btn">
             <svg class="modal-btn-icon" width="8" height="8">
@@ -554,7 +563,7 @@
                 <a href="">Privacy Policy</a>
                 </label>
             </div>
-            <button class="modal-main-btn main-page-btn" type="submit">Send</button>
+            <button class="modal-main-btn" type="submit">Send</button>
         
         </form>
     </div>
