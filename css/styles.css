@@ -644,14 +644,14 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 
 .modal {
+position: absolute;
+top: 50%;
+left: 50%;
 padding: 72px 24px 24px 24px;
 width: 408px;
 min-height: 584px;
 background-color: #FCFCFC;
 border-radius: 4px;
-position: absolute;
-top: 50%;
-left: 50%;
 transform: translate(-50%,-50%);
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -709,9 +709,12 @@ font-style: normal;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-bottom: 16px;
 }
 
-.modal-form {}
+.modal-email {
+margin-bottom: 16px;
+}
 
 .modal-input {
 color: #4D5AE5;
@@ -770,7 +773,7 @@ resize: none;
 
 
 .modal-field {
-margin-bottom: 24px;
+margin-bottom: 8px;
 }
 
 .modal-label{
@@ -821,7 +824,7 @@ color: #4D5AE5;
 text-decoration: underline;
 }
 
-.check-text span {
+.modal-span {
 display: inline-flex;
 align-items: center;
 justify-content: center;
@@ -868,7 +871,7 @@ fill: #F4F4FD;
 min-width: 169px;
 height: 56px;
     border: none;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+animation: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-main-btn:hover {
