@@ -569,9 +569,6 @@ border: 1px solid #000;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 top:0;
 left:0;
-/*
-opacity: 0;
-visibility: hidden;*/
 }
 
 .modal {
@@ -655,18 +652,23 @@ position: absolute;
 left: 16px;
 top: 50%;
 transform: translateY(-50%);
-}
-
-.modal-input-wrap:hover .modal-icon,
-.modal-input-wrap:focus .modal-icon {
-    fill: #4D5AE5;
+transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-wrap {
 position: relative;
-transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-input-wrap:hover .modal-icon,
+.modal-input-wrap:focus .modal-icon {
+fill: #4D5AE5;
+border-color: #4D5AE5;
 }
 
 .modal-text {
@@ -700,26 +702,27 @@ letter-spacing: 0.04em;
 font-size: 12px;
 }
 
-
-::placeholder {
+.modal-text::placeholder {
 color: rgba(46, 47, 66, 0.40);
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
 }
 
-.modal-input:focus-within{
-    border-color: #4D5AE5;
+.modal-text {
+transition-property: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text:focus-within,
+.modal-text:hover {
+border-color: #4D5AE5;
 }
 
 .modal-input:hover,
 .modal-input:focus {
 border-color:#4D5AE5;
-}
-
-.modal-input::placeholder{
-color: #8E8F99;
-font-size: 12px;
 }
 
 .check-text {
@@ -746,14 +749,15 @@ border-radius: 4px;
 border: 1px solid rgba(46, 47, 66, 0.40);
 fill:transparent;
 margin-right: 8px;
+cursor: pointer;
 }
-
+/*
 .is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-
+*/
 .check-input:checked + .check-text span {
 background-color: #4D5AE5;
 border: none;
@@ -761,22 +765,27 @@ fill: #ffffff;
 }
 
 .modal-main-btn {
+margin-top: 24px;
+}
+/*
+.modal-main-btn {
 display:flex;
 align-items: center;
 text-align: center;
 padding: 16px 32px;
-
 gap: 10px;
 border-radius: 4px;
-border: #4D5AE5;
-background: #4D5AE5;
+border-color: #4D5AE5;
+background-color: #4D5AE5;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-padding: 16px 32px;
-color: var(--WHITE, #FFF);
+color: #FFF;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
-margin: 24px 120px;
+width: 105px;
+margin: 0 auto;
+cursor: pointer;
 }
+*/
