@@ -1,4 +1,7 @@
 /* 
+
+======Global styles=====
+
 html, body {
 margin: 0;
 box-sizing: border-box;
@@ -24,6 +27,8 @@ color: currentColor;
 img {
     display: block;
 }
+
+======= Header =========
 
 address {
     font-style: normal;
@@ -157,6 +162,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 color: #404bbf;
 }
 
+========== Main page ==========
+
 .main-page {
 background: #2E2F42;
 padding-top: 188px;
@@ -213,6 +220,8 @@ background-color: #404BBF;
 .main-page-btn:focus {
 background-color: #404BBF;
 }
+
+============ Feature ===========
 
 .feature {
     padding: 120px 0;
@@ -273,6 +282,8 @@ font-weight: 400;
 letter-spacing: 0.02em;
 line-height: 1.5;
 }
+
+=========== Team ===========
 
 .team {
 background-color: #F4F4FD;
@@ -376,6 +387,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 fill:#F4F4FD;
 }
 
+========== Portfolio ===========
 
 .portfolio {
 background-color: #FFF;
@@ -470,6 +482,8 @@ font-weight: 400;
 letter-spacing: 0.02em;
 line-height: 1.5;
 }
+
+============ Footer ===========
 
 .footer {
 background: #2E2F42;
@@ -631,6 +645,8 @@ border: none;
 fill:#FFF;
 margin-left: 16px;
 }
+
+=========== Modal ===============
 
 .backdrop {
 position: fixed;
