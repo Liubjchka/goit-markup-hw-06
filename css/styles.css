@@ -933,6 +933,27 @@ width: calc((100% - 24px) / 2);
 text-align: left;
 }
 
+/* ========= Team ========= */
+
+.team {
+padding-left: 108px;
+padding-right: 108px;
+}
+
+.team-list {
+gap: 64px 24px;
+display: flex;
+align-items: center;
+}
+
+.team-image {
+    max-width: 100%;
+}
+
+.team-item {
+display: inline-flex;
+width: calc((100% - 24px) / 2);
+}
 }
 
 /* ==================== NOT TABLET ================= */
