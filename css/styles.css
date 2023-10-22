@@ -258,10 +258,10 @@ border-radius: 4px;
 border: 1px solid #8E8F99;
 background-color: #F4F4FD;
 display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-    display: none;
+align-items: center;
+justify-content: center;
+margin-bottom: 8px;
+display: none;
 }
 
 .feature-icon-item{
@@ -287,11 +287,11 @@ letter-spacing: 0.02em;
 }
 
 /* ========= Team ========= */
-/* 
+
 .team {
 background-color: #F4F4FD;
-padding-top: 120px;
-padding-bottom: 120px;
+padding-top: 96px;
+padding-bottom: 96px;
 }
 
 
@@ -309,18 +309,16 @@ margin-bottom: 72px;
 
 .team-list {
 display: flex;
-align-items: center;
-gap: 24px;
+flex-wrap: wrap;
+gap: 72px;
 }
 
 .team-item {
 background:  #FFF;
-display: inline-flex;
 padding-bottom: 0px;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-width: calc((100% - 72px) / 4);
 margin: 0 auto;
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -388,7 +386,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .icon{
 fill:#F4F4FD;
-} */
+} 
 
 /* ========= Portfolio ========= */
 /* 
@@ -971,6 +969,24 @@ text-align: left;
 
 .feature-subtitle-text {
 font-weight: 400;
+}
+
+/* ========= Team ========= */
+
+.team {
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.team-list {
+display: flex;
+align-items: center;
+gap: 24px;
+}
+
+.team-item {
+display: inline-flex;
+width: calc((100% - 72px) / 4);
 }
 
 }
