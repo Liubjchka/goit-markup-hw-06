@@ -1407,19 +1407,23 @@ width: calc((100% - 48px) / 3);
 padding: 100px 156px;
 }
 
+.footer-middle {
+margin-left: auto;
+}
+
 .footer-container {
 flex-wrap: nowrap;
 align-items: baseline;
+justify-content: space-between;
 }
 
 .footer-form {
-margin-left: 80px;
 display: flex;
 gap: 24px;
 }
 
 .footer-holder{
-margin-right: 120px;
+margin-right: auto;
 }
 
 .footer-text {
@@ -1427,7 +1431,11 @@ width: 264px;
 }
 
 .footer-middle-text {
-margin-left: 80px;
+margin-left: auto;
 }
+
+/* ========= Modal ========= */
+
+
 
 }
