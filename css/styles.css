@@ -73,9 +73,15 @@ color: #2e2f42;
 
 .header-menu-icon {
 border-bottom: #FFF;
-position: fixed;
+/* position: fixed;
 top: 16px;
-right: 16px;
+right: 16px; */
+
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-menu-list {
@@ -874,7 +880,7 @@ max-width: 768px;
 
 /* ========= Header ========= */
 
-/* .header-menu-icon {
+.header-menu-icon {
 display: none;
 }
 
@@ -889,7 +895,7 @@ margin-right: 76px;
 
 .header-navigation {
 display: inline-flex;
-margin-right: auto;
+margin-right: 120px;
 align-items: center;
 }
 
@@ -942,8 +948,13 @@ bottom: -1px;
 .author-address {}
 
 .address-list {
-/* display: flex; *//*
-gap: 40px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+position: fixed;
+top: 16px;
+right: 16px;
+gap: 12px;
 }
 
 .address {}
@@ -952,10 +963,11 @@ gap: 40px;
 color: #434455;
 font-family: 'Roboto';
 font-style: normal;
-font-size: 16px;
+font-size: 12px;
+font-style: normal;
 font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
+line-height: 1.17;
+letter-spacing: 0.04em;
 transition-property: color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -964,7 +976,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .address-item:hover,
 .address-item:focus{
 color: #404bbf;
-} */
+}
 
 /* ========= Main page ========= */
 
@@ -978,6 +990,7 @@ letter-spacing: 0.02em;
 line-height: 1.07;
 min-width: 496px;
 margin-bottom: 36px;
+margin: 0 auto;
 }
 
 /* ========= Feature ========= */
@@ -1084,10 +1097,10 @@ padding-right: 15px;
 
 /* ========= Header ========= */
 
-.section {
+/* .section {
 padding-top: 120px;
 padding-bottom: 120px;
-}
+} */
 
 .header {
 background-color: #FFF;
@@ -1209,7 +1222,9 @@ color: #404bbf;
 
 .main-page {
     max-width: 1440px;
-    padding: 188px 482px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin: 0 auto;
 }
 
 .main-page-title {
@@ -1217,6 +1232,9 @@ color: #404bbf;
     letter-spacing: 0.02em;
     line-height: 1.07;
     min-width: 496px;
+    margin-bottom: 48px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* ========= Feature ========= */
