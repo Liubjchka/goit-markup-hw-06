@@ -23,7 +23,8 @@ color: currentColor;
 }
 
 img {
-    display: block;
+display: block;
+max-width: 100%;
 }
 
 address {
@@ -107,6 +108,7 @@ z-index: 1;
 width: 100vw;
 height: 100vh;
 background-color: #FFF;
+color: #F4F4FD;
 padding-top: 24px;
 padding-right: 24px;
 padding-bottom: 40px;
@@ -247,8 +249,22 @@ padding-bottom: 72px;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office_1-min.jpg);
+background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/Dark-bg-mob-min.jpg);
 margin: 0 auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.main-page {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/Dark-bg-mob-2x-min.jpg);
+}
 }
 
 .main-page-title {
@@ -1092,6 +1108,7 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: column;
 gap: 12px;
+margin-right: 16px;
 }
 
 .address {}
@@ -1128,6 +1145,24 @@ line-height: 1.07;
 min-width: 496px;
 margin-bottom: 36px;
 margin-top: 0;
+}
+
+.main-page {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/Dark-bg-tablet-min.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.main-page {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/Dark-bg-tab-2x-min.jpg);
+}
 }
 
 /* ========= Feature ========= */
@@ -1340,6 +1375,21 @@ color: #404bbf;
     padding-top: 188px;
     padding-bottom: 188px;
     margin: 0 auto;
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/background/people-office_1-min.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.main-page {
+    background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-1-min-desc-2x.jpg);
+}
 }
 
 .main-page-title {
