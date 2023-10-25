@@ -51,7 +51,7 @@ background-color: #FFF;
 border-bottom: 1px solid #E7E9FC;
 padding-top: 16px;
 padding-bottom: 16px;
-z-index: 1;
+/* z-index: 1; */
 box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -749,9 +749,9 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-padding: 72px 24px 24px 24px;
-width: 408px;
-min-height: 584px;
+padding: 24px 16px;
+width: 288px;
+height: 623px;
 background-color: #FCFCFC;
 border-radius: 4px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -811,10 +811,11 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.02em;
 margin-bottom: 16px;
+margin-top: 24px;
 }
 
 .modal-email {
-margin-bottom: 16px;
+margin-bottom: 24px;
 }
 
 .modal-input {
@@ -888,7 +889,7 @@ font-weight: 400;
 line-height: 1.17;
 letter-spacing: 0.04em;
 font-size: 12px;
-margin-top: 16px;
+/* margin-top: 16px; */
 }
 
 .modal-text::placeholder {
@@ -976,7 +977,7 @@ fill: #F4F4FD;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
-    margin: 24px auto;
+    margin: 0 auto;
     display: block;
 min-width: 169px;
 height: 56px;
@@ -1020,6 +1021,10 @@ text-align: center;
 .current {
 color: #404bbf;
 }
+
+/* ========= Modal ========= */
+
+
 
 }
 
@@ -1436,6 +1441,10 @@ margin-left: auto;
 
 /* ========= Modal ========= */
 
-
+.modal {
+min-width: 408px;
+min-height: 584px;
+padding: 72px 24px 24px 24px;
+}
 
 }
