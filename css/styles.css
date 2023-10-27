@@ -1018,10 +1018,6 @@ text-align: center;
 }
 
 
-.current {
-color: #404bbf;
-}
-
 /* ========= Modal ========= */
 
 }
@@ -1078,6 +1074,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .current {
 color: #404bbf;
+}
+
+.current::after {
+content: "";
+width: 48px;
+height: 4px;
+border-radius: 2px;
+background: #404BBF;
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
 }
 
 .address-list {
@@ -1310,6 +1318,18 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .current {
 color: #404bbf;
+}
+
+.current::after {
+content: "";
+width: 48px;
+height: 4px;
+border-radius: 2px;
+background: #404BBF;
+display: block;
+position: absolute;
+left: 0;
+bottom: -1px;
 }
 
 .address-list {
